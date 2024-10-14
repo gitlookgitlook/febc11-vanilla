@@ -1,0 +1,20 @@
+meta {
+  name: 게시물 추가
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://11.fesp.shop/posts
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "test",
+    "title": "테스트용 제목",
+    "content": "테스트 중입니다.",
+    "tag": "테스트"
+  }
+}
