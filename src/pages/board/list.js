@@ -3,7 +3,7 @@ import axios from "axios" // axios라는 라이브러리를 가져오는 코드
 // API 서버에서 게시물 목록 조회
 async function getList() {
   const res = await axios.get("https://11.fesp.shop/posts", {
-    params: { type: "test", page: 1, limit: 5 },
+    params: { type: "test", page: 2, limit: 5 },
   })
   console.log(res)
   return res.data
